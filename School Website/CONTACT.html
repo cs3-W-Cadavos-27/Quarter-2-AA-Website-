@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    
+    <section class="header">
+        <nav>
+            <a href="PAGE%201.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="PAGE%201.html">HOME</a></li>
+                    <li><a href="ABOUT.html">ABOUT US</a></li>
+                    <li><a href="FACILITIES.html">FACILITIES</a></li>
+                    <li><a href="ADMISSION.html">ADMISSION</a></li>
+                    <li><a href="CAMPUSES.html">CAMPUSES</a></li>
+                    <li><a href="CONTACT.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    
+  <div class="contactUS">
+    <div class="title">
+      <h2>CONTACT US</h2>
+    </div>
+    <div class="box">
+      <div class="contact form">
+        <h3>Send a Message</h3>
+        <form>
+          <div class="formBox">
+            <div class="row50">
+              <div class="inputBox">
+                <span>First Name: </span>
+                <input type="text" placeholder="Name">
+              </div>
+                
+              <div class="inputBox">
+                <span>Last Name: </span>
+                <input type="text" placeholder="Name">
+              </div>
+              </div>
+
+              
+            <div class="row50">
+              <div class="inputBox">
+                <span>Email: </span>
+                <input type="text" placeholder="yourname@gmail.com">
+              </div>
+                              </div>
+
+                
+              <div class="inputBox">
+                <span>Mobile: </span>
+                <input type="text" placeholder="+0000 000 0000">
+              </div>
+                
+              <div class="row100">
+              <div class="inputBox">
+                <span>Message: </span>
+                <textarea placeholder="Write your message here..."></textarea>
+              </div>
+            </div>
+                
+              <div class="row100">
+                <div class="inputBox">
+                    <input type="Submit" value="Send">
+                </div>
+            </div>
+          </div>
+        </form>
+      </div>
+        
+        <!-----------info thing--------------->
+      <div class="contact info">
+        <h3>Contact Info</h3>
+          <div class="infoBox">
+            <div>
+              <span><ion-icon name="location"></ion-icon></span>
+                <p>Brgy. Ampayon, Butuan City<br>Agusan Del Norte, 8600</p>
+              </div>
+              <div>
+                <span><ion-icon name="mail"></ion-icon></span>
+                  <a href="mailto:ocd@crc.pshs.edu.ph">ocd@crc.pshs.edu.ph</a>
+              </div>
+              <div>
+                <span><ion-icon name="call"></ion-icon></span>
+                  <a href="tel:0858170987">(085) 817-0987</a>
+              </div>
+              
+        <!------socials--------->
+              <ul class="sci">
+                <li><a href="https://www.facebook.com/pshscrc13/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://twitter.com/pisaycaraga?lang=en"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              </ul>
+          </div>
+      </div>
+        
+        <!-----------map thing--------------->
+
+      <div class="contact map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8056.513261833486!2d125.5913395541954!3d8.970257650714505!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3301953399c598c3%3A0xa9bd14af653c9742!2sPhilippine%20Science%20High%20School%20-%20Caraga%20Region%20Campus!5e1!3m2!1sen!2sph!4v1704904121365!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+ <script>
+
+
+     const constraints = {
+         name: {
+             presence: { allowEmpty: false }
+         },
+         email: {
+             presence: { allowEmpty: false },
+             email: true
+         },
+         message: {
+             presence: { allowEmpty: false }
+         }
+     };
+
+     const form = document.getElementById('contact-form');
+     form.addEventListener('submit', function (event) {
+
+         const formValues = {
+             name: form.elements.name.value,
+             email: form.elements.email.value,
+             message: form.elements.message.value
+         };
+
+
+         const errors = validate(formValues, constraints);
+         if (errors) {
+             event.preventDefault();
+             const errorMessage = Object
+                 .values(errors)
+                 .map(function (fieldValues) {
+                     return fieldValues.join(', ')
+                 })
+                 .join("\n");
+
+             alert(errorMessage);
+         }
+     }, false);
+ </script>
+    
+    <footer>
+        <a href="MAKERS.html">Made by Wendy Amor S. Cadavos, Lorraine Marie B. Alvizo, and Lyle Emmanuel C. Libres</a>
+    </footer>
+    
+</body>
+</html>

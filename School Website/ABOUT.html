@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html><head>
+    <title>ABOUT US</title>
+
+<style type="text/css" id="operaUserStyle"></style></head> 
+<body>
+    
+    <section class="header">
+        <nav>
+            <a href="PAGE%201.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="PAGE%201.html">HOME</a></li>
+                    <li><a href="ABOUT.html">ABOUT US</a></li>
+                    <li><a href="FACILITIES.html">FACILITIES</a></li>
+                    <li><a href="ADMISSION.html">ADMISSION</a></li>
+                    <li><a href="CAMPUSES.html">CAMPUSES</a></li>
+                    <li><a href="CONTACT.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    
+        <div class="text-box">
+            <h1>ABOUT US</h1>
+        </div>
+    </section>
+    
+    <div class="banner1">
+        <div class="w1">
+            <h1>Our Story</h1>
+            <p>The genesis of the Philippine Science High School dates back to its inaugural campus in Diliman, Quezon City, established under Republic Act No. 3661, colloquially known as the PSHS Charter, and endorsed by President Ferdinand E. Marcos. The historical journey took a significant turn on July 5, 2012, as the Board of Trustees of the Philippine Science High School meticulously crafted a resolution that would evolve into what we now recognize as the 13th campus, nestled in the vibrant heart of the Caraga Region.<br><br>
+
+            On March 9, 2011, the heirs of Hon. Teofisto Guingona Sr. magnanimously declared their decision to donate 5 hectares of land, earmarked as the permanent site for the PSHS Caraga Region Campus. However, during the subsequent inspection for the site's development, the construction task force committee was met with geotechnical challenges linked to erecting high-rise buildings along a riverbank. This unforeseen hurdle posed a considerable complication, especially as PSHS-CRC was poised to open its doors for the School Year 2013-2014, guided by the capable leadership of Campus Director Dr. Ruwina S. Gonzaga.<br><br>
+
+            A timely intervention unfolded as a state-controlled university, with ownership of a sprawling 232 hectares of land, recognized the plight. This university extended a generous hand, lending a parcel of its property to PSHS-CRC. This temporary refuge accommodated 14 rooms in a ground-level building for two consecutive school years, providing essential space while the construction of PSHS buildings unfolded on the newly donated 5 hectares of land.<br><br>
+
+            The turning point in this narrative occurred on July 7, 2017, marked by a groundbreaking ceremony at the permanent site of PSHS Caraga Region Campus. The campus ceremoniously shifted, proudly inaugurating its first three buildings: the Administration Building, Academic I Building, and Academic II Building. Presently, the campus remains steadfast in its commitment, diligently expanding its infrastructure to facilitate holistic student development.
+</p>
+        </div>
+        
+        <div class="w6">
+            <h1>Philosophy and Goals of PSHS Education</h1>
+            <p>The main purpose of PSHS education is the holistic development of its scholars. Each PSHS scholar has unique giftedness and potentials which should be recognized and nurtured so that each one develops to the fullest extent possible. The PSHS special science curriculum engenders in the scholars a passion for learning and inspires them to choose careers in science and technology and, hence, contribute to national development.<br><br>The PSHS is most effective in an environment characterized by all-around performance- excellence, dynamic and collaborative leadership, outstanding facilities, resources and support alliances, and an unswerving commitment for service to the nation and to one another.</p>
+        </div>
+    
+        <div class="w4">
+            <h1>Our Vision</h1>
+            <p>We are the leading science high school in the Asia Pacific Region preparing our scholars to be globally competitive Filipino scientists equipped with 21st century skills and imbued with core values of Integrity, Excellence, and Service to the Nation</p>
+        </div>
+        
+        <div class="w2">
+            <h1>Our Mission</h1>
+            <p>Advancing premier high school STEM education for the people.</p>
+        </div>
+        
+        <div class="w7">
+            <h1>Quality Policy</h1>
+            <p>PSHSS is dedicated to provide relevant secondary education with emphasis on Science, Technology and Mathematics, aimed to prepare students to become globally competitive Filipino S&T leaders and professionals imbued with core values of integrity, excellence and service to the nation. Moreover, PSHS is committed to continual improvement and compliance to existing statutory and regulatory requirements.</p>
+        </div>
+        
+        <div class="w8">
+            <h1>The Official Logo</h1>
+            <p>The flame, which is the substance of the PSHS logo, symbolizes enthusiasm, ardour, light and warmth. The flame is seen in the center of the four circles (paired together), the common symbol of the DOST and its agencies, one of which is the Philippine Science High School. The circles symbolize unit particles, the building blocks of nature, which are the subject and sub- stance of science and technology. The circle design gives an illusion of movement signifying progress through science and technology.</p>
+            <img src="logo.png">
+        </div>
+    
+        <div class="w5">
+            <h1>Mandate</h1>
+            <p>To offer on a free scholarship basis a secondary course with special emphasis on subjects pertaining to sciences with the end view of preparing its students for a science career. (Sec. 2, RA3661)</p>
+        </div>
+        
+        <div class="w3">
+            <h1>Agency Officials</h1>
+            <p>The faculty at PSHS-CRC comprises a highly qualified and dedicated team of educators and researchers committed to fostering academic excellence, nurturing scientific curiosity, and guiding the students towards becoming well-rounded individuals in the field of science and technology.</p>
+            <img src="List-of-Officials-PSHS-CRC.jpeg">
+        </div>
+        
+        <footer>
+        <a href="MAKERS.html">Made by Wendy Amor S. Cadavos, Lorraine Marie B. Alvizo, and Lyle Emmanuel C. Libres</a>
+    </footer>
+        
+        </div>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family:sans-serif;
+    
+    }
+    
+    
+    .banner1{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(PSHS.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 60px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 200px;
+    color: #fff;
+}
+    
+    .content{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align:center;
+        color: #fff;
+    
+    }
+    .content h1{
+        font-size: 70px;
+        margin-top: 80px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .content p{
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+    }
+    button{
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid #3498db;
+        background: transparent;
+        color:#fff;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    span{
+    
+        background: #009688;
+        height: 100%;
+        width: 0;
+        border-radius: 0px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    button:hover span{
+        width: 100%;
+    }
+    button:hover{
+        border: none;
+    }
+    body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+                color: #333;
+    }
+    
+            header{
+               
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+                margin-top: -40px;
+            }
+    
+            .w1 {
+                max-width: 1000px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                text-align: left;
+                transition: 0.5s;
+                margin-top: 50px;
+            }
+    
+            .w1:hover{
+    
+                transform: scale(125%);
+            }
+    
+            .w2{
+                max-width: 1000px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                text-align: left;
+                transition: 0.5s;
+            }
+    
+            .w2:hover{
+                transform: scale(125%);
+    
+    
+           }
+    
+           .w3{
+                max-width: 1000px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                text-align: left;
+                transition: 0.5s;
+            }
+    
+            .w3:hover{
+                transform: scale(125%);
+           }
+            .w3 img{
+                width: 50%;
+            }
+            .w4{
+                max-width: 1000px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                text-align: left;
+                transition: 0.5s;
+            }
+    
+            .w4:hover{
+                transform: scale(125%);
+           }
+            .w5{
+                max-width: 1000px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                text-align: left;
+                transition: 0.5s;
+            }
+    
+            .w5:hover{
+                transform: scale(125%);
+           }
+            .w6{
+                max-width: 1000px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                text-align: left;
+                transition: 0.5s;
+            }
+    
+            .w6:hover{
+                transform: scale(125%);
+           }
+            .w7{
+                max-width: 1000px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                text-align: left;
+                transition: 0.5s;
+            }
+    
+            .w7:hover{
+                transform: scale(125%);
+           }
+            .w8{
+                max-width: 1000px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                text-align: left;
+                transition: 0.5s;
+            }
+    
+            .w8:hover{
+                transform: scale(125%);
+           }
+            .w8 img{
+                width: 30%;
+                margin-left: 330px;
+                
+            }
+    
+             h1 {
+                color: #EFA52D;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+    
+            p {
+                line-height: 1.6;
+                font-family:'Times New Roman', Times, serif;
+                
+            }
+    
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+    
+            li {
+                margin-bottom: 10px;
+            }
+
+        }
+    h1{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(PSHS.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 60px;
+}
+footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #EFA52D;
+            color: #fff;
+        }
+            
+    </style>
+
+    </body></html>
